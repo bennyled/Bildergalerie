@@ -1,0 +1,80 @@
+body{
+    margin: 0; 
+    
+}
+
+
+
+h1{
+    font-family: 'raleway';
+}
+
+.imagebox{ 
+    cursor: pointer; 
+   display: flex; 
+   flex-wrap: wrap; 
+   gap: 24px;
+    object-fit: cover;
+    border-radius: 12px; 
+    margin: 0; 
+
+}
+
+.thumbnail{
+    cursor: pointer; 
+   
+    height: 225px; 
+    width: 225px; 
+    object-fit: cover;
+    
+    border-radius: 12px; 
+    margin-left: 80px;
+}
+
+.open-image{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    width: 100vw; 
+    position: fixed; 
+    z-index: 999; 
+    background-color: black; 
+    
+
+}
+
+.open-image img{
+   
+    height: 80%; 
+    width: 80%; 
+    object-fit: contain; 
+   
+    
+    
+}
+.arrow  {
+    color: white;
+    transition: transform .2s; /* Animation */
+    height: 40px; 
+    width: 40px; 
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+.arrow:hover{
+    transform: scale(1.5);
+}
+
+.fullscreen{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.d-none{
+    display: none !important; 
+}
+
