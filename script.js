@@ -47,9 +47,11 @@ function generateLeftArrow(i){
 
 
 function generateRightArrow(i){
+   
    return `<div class="arrow right-arrow" id="rightArrow" onclick="showNextPicture(${i})">
    <img src="./icons/arrowright.png">
    </div>`;
+
 }
 
 function togglePicture(){
