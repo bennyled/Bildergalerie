@@ -1,22 +1,32 @@
 body{
     margin: 0; 
-    
+    padding: 0; 
 }
 
 
+header{
+    margin: 0; 
+    background-color: beige; 
+    height: 122px; 
+}
 
 h1{
-    font-family: 'raleway';
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'raleway'; 
+    font-weight: bold; 
 }
 
 .imagebox{ 
     cursor: pointer; 
-   display: flex; 
-   flex-wrap: wrap; 
-   gap: 24px;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 24px;
     object-fit: cover;
     border-radius: 12px; 
     margin: 0; 
+    background-image: linear-gradient(to top, white 20%, lightblue 80%);
 
 }
 
@@ -31,12 +41,23 @@ h1{
     margin-left: 80px;
 }
 
+
+
+.thumbnailbox{
+    cursor: pointer; 
+    height: 225px; 
+    width: 225px; 
+    object-fit: cover;
+    border-radius: 12px; 
+    margin-left: 80px; 
+}
+
 .open-image{
     display: flex; 
     justify-content: center; 
     align-items: center;
-    height: 100vh; 
-    width: 100vw; 
+    height: 100%; 
+    width: 100%;
     position: fixed; 
     z-index: 999; 
     background-color: black; 
@@ -45,24 +66,34 @@ h1{
 }
 
 .open-image img{
-   
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     height: 80%; 
     width: 80%; 
     object-fit: contain; 
-   
-    
-    
-}
-.arrow  {
-    color: white;
-    transition: transform .2s; /* Animation */
-    height: 40px; 
-    width: 40px; 
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px; 
 }
 
+
+.arrow  {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    color: white;
+    transition: transform .2s; /* Animation */
+     
+ 
+    padding: 1rem;
+  
+    border-radius: 100%;
+}
+
+
+.arrow img {
+    width: 32px; 
+    height: 32px; 
+}
 .arrow:hover{
     transform: scale(1.5);
 }
@@ -71,7 +102,6 @@ h1{
     height: 100%;
     width: 100%;
     z-index: 1;
-    
 }
 
 .d-none{
